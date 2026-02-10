@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teddy Day 💖 For Gaurang Verma</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cinzel', serif; /* Luxurious serif font for body text */
+      background: linear-gradient(135deg, #8b0000, #ff1493, #dc143c, #ffb6c1); /* Deep red gradient with pink accents for a luxurious, grand look */
+      color: #ffffff; /* Pure white for all text */
+      text-align: center;
+      overflow-x: hidden;
+    }
+    .page { 
+      min-height: 100vh; 
+      display: none; 
+      align-items: center; 
+      justify-content: center; 
+      padding: 30px; 
+      flex-direction: column;
+    }
+    .active { display: flex; }
+    .card {
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(20px);
+      border-radius: 35px;
+      padding: 45px;
+      max-width: 850px;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+      border: 3px solid rgba(255,255,255,0.2);
+      animation: fadeIn 1.2s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    h1, h2 { 
+      margin-bottom: 25px; 
+      text-shadow: 3px 3px 6px rgba(0,0,0,0.5), 0 0 10px rgba(255,255,255,0.3); /* Unique glowing white shadow for luxury */
+      font-weight: bold;
+      font-family: 'Playfair Display', serif; /* Elegant serif for headings */
+      color: #ffffff; /* White with unique shadow effects */
+    }
+    .name { 
+      color: #ffffff; /* White, unique with extra glow */
+      font-weight: bold; 
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.6), 0 0 8px rgba(255,215,0,0.5); /* Gold-tinted glow for uniqueness */
+    }
+    .emoji { 
+      font-size: 2.2em; 
+      margin: 15px 0;
+    }
+    button {
+      padding: 18px 40px; 
+      margin: 15px; 
+      border: none; 
+      border-radius: 40px;
+      font-size: 1.2em; 
+      cursor: pointer; 
+      transition: all 0.4s ease;
+      font-weight: bold;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+      font-family: 'Cinzel', serif; /* Matching luxury font */
+      color: #ffffff; /* White text */
+    }
+    button:hover { 
+      transform: scale(1.15); 
+      box-shadow: 0 15px 30px rgba(0,0,0,0.3), 0 0 15px rgba(255,255,255,0.2); /* Unique white glow on hover */
+    }
+    .yes { 
+      background: linear-gradient(45deg, #b22222, #ff69b4); /* Red-pink gradient for luxury */
+      color: #ffffff; 
+    }
+    .no { 
+      background: linear-gradient(45deg, #cd5c5c, #ffe4e1); 
+      color: #ffffff; 
+    }
+    .floating {
+      position: fixed; 
+      bottom: -50px; 
+      font-size: 30px;
+      animation: floatUp 8s linear infinite; 
+      opacity: 0.95;
+      pointer-events: none;
+    }
+    @keyframes floatUp {
+      0% { transform: translateY(0) rotate(0deg); opacity: 0; }
+      10% { opacity: 1; }
+      50% { transform: translateY(-50vh) rotate(180deg); }
+      100% { transform: translateY(-110vh) rotate(360deg); opacity: 0; }
+    }
+    .shayari { 
+      font-style: italic; 
+      margin: 30px 0; 
+      line-height: 1.9; 
+      background: rgba(255,255,255,0.05);
+      padding: 25px;
+      border-radius: 25px;
+      border: 2px solid rgba(255,255,255,0.2);
+      color: #ffffff; /* White, unique with subtle shadow */
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+      font-family: 'Cinzel', serif; /* Luxury serif for poetry */
+    }
+    .heart-beat {
+      animation: heartBeat 1.8s infinite;
+    }
+    @keyframes heartBeat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.15); }
+    }
+    .cute-text {
+      font-family: 'Dancing Script', cursive; /* Elegant cursive for cute text */
+      font-size: 1.3em;
+      color: #ffffff; /* White, unique with soft glow */
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+
+<audio autoplay loop>
+  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+</audio>
+
+<!-- PAGE 1 -->
+<div class="page active" id="page1">
+  <div class="card">
+    <h1 class="heart-beat">Happy Teddy Day 🧸🌸</h1>
+    <h2>For <span class="name">Gaurang Verma (GG 💚)</span></h2>
+    <p class="emoji">🌹🧸❤️🌸💖🦋</p>
+    <p class="cute-text">
+      Hey GG 💚,<br><br>
+      It’s me, <b>Suhavni</b> 🤍.
+      On this special <b>Teddy Day – 10th Feb</b>, I wanted to create something that feels very *us*.
+      Something cute, a little emotional, and full of love — just like the way you make me feel 🧸💖.
+      <br><br>
+      GG, when you smile, everything feels a bit better.
+      If my feelings were shaped into something,
+      it would be a teddy — soft, warm, and always by your side 🤍🧸.
+      <br><br>
+      This website is my little world for you,
+      filled with flowers, hearts, teddies, and all my feelings 🌸❤️.
+    </p>
+    <button class="yes" onclick="goToPage('page2')">Next 💌</button>
+  </div>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page" id="page2">
+  <div class="card">
+    <h1 class="heart-beat">💖 Will You Be My Valentine? 💖</h1>
+    <p class="emoji">🧸🌹❤️🌸💕🦄</p>
+    <p class="cute-text">GG, my heart is fluttering just thinking about you! 🦋💖🥰</p>
+    <button class="yes" onclick="goToPage('page3')">Yes 💚</button>
+    <button class="no" onclick="noClick()">No 🙈</button>
+  </div>
+</div>
+
+<!-- PAGE 3 -->
+<div class="page" id="page3">
+  <div class="card">
+    <h1>For You, My <span class="name">GG 💚</span></h1>
+    <p class="emoji">💖🧸🌸💌🌹🐻</p>
+    <p class="cute-text">
+      Gaurang 🤍,<br><br>
+      You’re not just a part of my life,
+      you’re my comfort, my habit,
+      and that feeling that brings a smile without any reason 💖.
+      <br><br>
+      With you, every little thing feels special —
+      whether it’s random talks,
+      or those moments when we understand each other without words 💕.
+    </p>
+
+    <div class="shayari">
+      "When you’re with me, I feel no fear,<br>
+      When you’re near, everything incomplete feels complete 💖,<br>
+      Whether there’s a teddy in my hands or not,<br>
+      Having you is the most precious gift to me 🧸🌹"
+    </div>
+
+    <p class="cute-text">
+      Thank you for choosing <b>Yes</b> 💚,
+      for choosing *us*, and for being exactly who you are.
+      <br><br>
+      Always yours,<br>
+      <b>Suhavni 🤍🧸</b>
+    </p>
+    <button class="yes" onclick="goToPage('page4')">Continue to More Love 💕</button>
+  </div>
+</div>
+
+<!-- PAGE 4: New Emotional Section -->
+<div class="page" id="page4">
+  <div class="card">
+    <h1 class="heart-beat">Memories That Melt My Heart 💖</h1>
+    <p class="emoji">🧸🌸❤️📸🌈💫</p>
+    <p class="cute-text">
+      GG, remember our first chat? It felt like destiny knocking on my door 🥰.
+      Every laugh we shared, every secret we whispered, they’re all tucked away in my heart like precious treasures.
+      You make the ordinary extraordinary, and I can’t imagine a day without your warmth 🧸💕.
+      <br><br>
+      You’re my sunshine on cloudy days, my teddy bear for cuddles, and my forever Valentine 🌞🧸❤️.
+    </p>
+    <div class="shayari">
+      "In your eyes, I see my world so bright,<br>
+      With you, every moment feels just right 💖,<br>
+      Teddy or not, you’re my favorite sight,<br>
+      Loving you is my pure delight 🧸🌹"
+    </div>
+    <button class="yes" onclick="goToPage('page5')">More Sweetness Ahead 🍭</button>
+  </div>
+</div>
+
+<!-- PAGE 5: New Cute Section -->
+<div class="page" id="page5">
+  <div class="card">
+    <h1 class="heart-beat">Why I Love You So Much 💕</h1>
+    <p class="emoji">🌸🧸❤️💖🌹🍓</p>
+    <p class="cute-text">
+      Oh GG, where do I even start? Your kindness melts me like chocolate on a warm day 🍫.
+      You’re funny, caring, and the best listener ever. I love how you make me feel safe and adored 🛡️💖.
+      <br><br>
+      From your goofy jokes to your gentle hugs, everything about you is adorable. You’re my teddy, my love, my everything 🧸❤️.
+      I promise to cherish you forever, through ups and downs, with lots of cuddles and kisses 😘.
+    </p>
+    <div class="shayari">
+      "Your smile lights up my darkest nights,<br>
+      With you, life’s a beautiful flight,<br>
+      My GG, you’re my guiding light 🧸🌹"
+    </div>
+    <button class="yes" onclick="goToPage('page6')">One Last Page of Love 💌</button>
+  </div>
+</div>
+
+<!-- PAGE 6: Final Emotional Section -->
+<div class="page" id="page6">
+  <div class="card">
+    <h1 class="heart-beat">Forever and Always 💖</h1>
+    <p class="emoji">🧸🌸❤️🌹💕🌺</p>
+    <p class="cute-text">
+      GG, as we celebrate Teddy Day, I want you to know that my love for you grows stronger every day 🌱💖.
+      You’re the one who makes my heart skip a beat, the one I dream about, and the one I want by my side forever 🧸❤️.
+      <br><br>
+      Thank you for being you, for loving me back, and for making this journey so magical. Here’s to many more teddy days, filled with love and laughter 🎉💕.
+      <br><br>
+      I love you endlessly,<br>
+      <b>Your Suhavni 🤍🧸</b>
+    </p>
+    <div class="shayari">
+      "In this world of chaos, you’re my peace,<br>
+      With you, my worries find release 💖,<br>
+      Teddy in arms or not, you’re my bliss,<br>
+      Loving you is my eternal kiss 🧸🌹"
+    </div>
+    <button class="yes" onclick="goToPage('page1')">Start Over? 🔄</button>
+  </div>
+</div>
+
+<script>
+  function goToPage(id) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+  }
+  function noClick() {
+    alert('This button is too shy to work 🙈💖 Try again, cutie!');
+  }
+  const emojis = ['💖','🌸','🧸','❤️','🌹','💕','🦋','🥰','😘','🍫','🐻','🌈','😍','🌟','🍓','🦄','💫','🥺','😊','🌺','🌞','🎉','🌱','🛡️','🔄'];
+  setInterval(() => {
+    const e = document.createElement('span');
+    e.className = 'floating';
+    e.style.left = Math.random()*100 + 'vw';
+    e.style.animationDuration = (5+Math.random()*5)+'s';
+    e.innerText = emojis[Math.floor(Math.random()*emojis.length)];
+    document.body.appendChild(e);
+    setTimeout(()=>e.remove(),8000);
+  },500);
+</script>
+
+</body>
+</html>
